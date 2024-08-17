@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Esquina Cultural</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Navegación -->
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#sobre-nosotros">Sobre Nosotros</a></li>
+                <li><a href="#talleres">Talleres</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+                <li><a href="#ubicacion">Ubicación</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Inicio -->
+    <section id="inicio" class="inicio">
+        <div class="contenido-inicio">
+            <h1>Esquina Cultural</h1>
+            <p>Explora tu creatividad y descubre nuevas habilidades</p>
+            <button onclick="scrollToSection('talleres')">Descubre Nuestros Talleres</button>
+        </div>
+    </section>
+
+    <!-- Sobre Nosotros -->
+    <section id="sobre-nosotros" class="sobre-nosotros">
+        <h2>Sobre Nosotros</h2>
+        <p>En Esquina Cultural, creemos en el poder transformador del arte y la creatividad. Nuestro centro ofrece un espacio
+            donde personas de todas las edades pueden explorar nuevas habilidades, expresarse y conectarse
+            con otros. Fundado en 2024, nuestra misión es proporcionar talleres gratuitos y accesibles para todos, fomentando
+            una comunidad inclusiva y vibrante.</p>
+    </section>
+
+    <!-- Talleres -->
+    <section id="talleres" class="talleres">
+        <h2>Talleres</h2>
+        <div class="talleres-grid">
+            <div class="taller">
+                <h3>Danza</h3>
+                <p>Exprésate a través del movimiento.</p>
+            </div>
+            <div class="taller">
+                <h3>Canto</h3>
+                <p>Descubre tu voz interior.</p>
+            </div>
+            <div class="taller">
+                <h3>Música</h3>
+                <p>Aprende a tocar un instrumento.</p>
+            </div>
+            <div class="taller">
+                <h3>Cerámica</h3>
+                <p>Crea obras de arte con tus manos.</p>
+            </div>
+            <div class="taller">
+                <h3>Teatro</h3>
+                <p>Desarrolla tus habilidades dramáticas.</p>
+            </div>
+            <div class="taller">
+                <h3>Tecnología</h3>
+                <p>Explora el mundo digital.</p>
+            </div>
+            <div class="taller">
+                <h3>Fotografía</h3>
+                <p>Captura momentos únicos.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contacto -->
+    <section id="contacto" class="contacto">
+        <h2>Contacto</h2>
+        <p>Dirección: <a href="https://maps.app.goo.gl/bBy2jHCDvjqMysZU6" target="_blank">Ver en Google Maps</a></p>
+        <p>Teléfono: (123) 456-7890</p>
+        <p>Email: contacto@esquinacultural.com</p>
+    </section>
+
+    <!-- Ubicación -->
+    <section id="ubicacion" class="ubicacion">
+        <h2>Ubicación</h2>
+        <iframe src="https://maps.app.goo.gl/bBy2jHCDvjqMysZU6" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Esquina Cultural. Todos los derechos reservados.</p>
+    </footer>
+
+    <!-- Scripts -->
+    <script>
+        function scrollToSection(sectionId) {
+            document.getElementById(sectionId).scrollIntoView({ behavior: 'smooth' });
+        }
+    </script>
+</body>
+
+</html>

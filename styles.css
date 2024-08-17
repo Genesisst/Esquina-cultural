@@ -1,0 +1,113 @@
+/* Global Styles */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 10px 0;
+}
+
+nav ul {
+    list-style-type: none;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+.inicio {
+    background: url('https://www.example.com/background.jpg') no-repeat center center/cover;
+    color: white;
+    text-align: center;
+    padding: 100px 20px;
+}
+
+.inicio h1 {
+    font-size: 3em;
+    margin: 0;
+}
+
+.inicio p {
+    font-size: 1.5em;
+    margin: 10px 0 30px;
+}
+
+.inicio button {
+    background-color: #f04e4e;
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    font-size: 1em;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.inicio button:hover {
+    background-color: #d94444;
+}
+
+.sobre-nosotros, .talleres, .contacto, .ubicacion {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.sobre-nosotros p {
+    max-width: 800px;
+    margin: 0 auto;
+    font-size: 1.2em;
+}
+
+.talleres-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.taller {
+    background-color: #f0f0f0;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.taller h3 {
+    margin-top: 0;
+}
+
+.contacto p, .ubicacion p {
+    font-size: 1.1em;
+    margin: 10px 0;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    font-size: 0.9em;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .talleres-grid {
+        grid-template-columns: 1fr;
+    }
+}
