@@ -1,10 +1,9 @@
-/* Código CSS actualizado */
-
 /* Estilo general */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
+    background-color: #f0f0f0; /* Fondo claro para todo el cuerpo */
 }
 
 /* Estilo para el contenedor principal */
@@ -16,11 +15,11 @@ body {
 
 /* Sección de Sobre Nosotros, Talleres y Contacto con imagen de fondo común */
 .imagen-fondo-comun {
-    background: url('https://drive.google.com/uc?export=view&id=1oi_1MGacjhHxWsegPDLMzYsQ7HoFyIdV') no-repeat center center/cover;
-    color: #fff;
+    background: url('https://picsum.photos/1920/1080') no-repeat center center/cover;
+    color: #333; /* Cambia el color del texto a gris oscuro */
     padding: 50px 20px;
     border-radius: 10px;
-    background-size: cover; /* Asegura que la imagen cubra toda el área */
+    background-size: cover;
 }
 
 /* Estilo para las secciones */
@@ -28,24 +27,24 @@ section {
     padding: 50px 20px;
     margin-bottom: 20px;
     border-radius: 10px;
-    background-color: rgba(0, 0, 0, 0.6); /* Fondo semitransparente */
+    background-color: rgba(255, 255, 255, 0.8); /* Fondo semitransparente blanco */
 }
 
 /* Estilo para los encabezados */
 h1, h2 {
-    color: #fff;
+    color: #333; /* Cambia el color del texto de los encabezados a gris oscuro */
     text-align: center;
 }
 
 /* Estilo para el texto */
 p {
-    color: #fff;
+    color: #333; /* Cambia el color del texto a gris oscuro */
     text-align: justify;
 }
 
 /* Estilo para los enlaces */
 a {
-    color: #FFD700; /* Color dorado para los enlaces */
+    color: #0066cc; /* Color azul para los enlaces */
     text-decoration: none;
 }
 
