@@ -13,29 +13,38 @@ body {
     padding: 20px;
 }
 
-/* Sección de Sobre Nosotros, Talleres y Contacto */
+/* Sección de Sobre Nosotros, Talleres y Contacto con imagen de fondo común */
+.imagen-fondo-comun {
+    background: url('https://tse3.mm.bing.net/th?id=OIP.ptcUVLDU1uAN1wgvujPgLwAAAA&pid=Api&P=0&h=180') no-repeat center center/cover;
+    color: #fff; /* Cambia el color del texto a blanco */
+    padding: 50px 20px;
+    border-radius: 10px;
+    background-size: cover;
+}
+
+/* Estilo para las secciones */
 section {
     padding: 50px 20px;
     margin-bottom: 20px;
     border-radius: 10px;
-    background-color: #fff; /* Fondo blanco sólido */
+    background-color: rgba(0, 0, 0, 0.5); /* Fondo semitransparente negro */
 }
 
 /* Estilo para los encabezados */
 h1, h2 {
-    color: #000; /* Texto en color negro */
+    color: #fff; /* Cambia el color del texto de los encabezados a blanco */
     text-align: center;
 }
 
 /* Estilo para el texto */
 p {
-    color: #000; /* Texto en color negro */
+    color: #fff; /* Cambia el color del texto a blanco */
     text-align: justify;
 }
 
 /* Estilo para los enlaces */
 a {
-    color: #000; /* Enlaces en color negro */
+    color: #fff; /* Color blanco para los enlaces */
     text-decoration: none;
 }
 
