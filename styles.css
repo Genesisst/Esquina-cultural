@@ -16,7 +16,7 @@ body {
 /* Sección de Sobre Nosotros, Talleres y Contacto con imagen de fondo común */
 .imagen-fondo-comun {
     background: url('https://picsum.photos/1920/1080') no-repeat center center/cover;
-    color: #333; /* Cambia el color del texto a gris oscuro */
+    color: #000; /* Cambia el color del texto a negro */
     padding: 50px 20px;
     border-radius: 10px;
     background-size: cover;
@@ -32,19 +32,19 @@ section {
 
 /* Estilo para los encabezados */
 h1, h2 {
-    color: #333; /* Cambia el color del texto de los encabezados a gris oscuro */
+    color: #000; /* Cambia el color del texto de los encabezados a negro */
     text-align: center;
 }
 
 /* Estilo para el texto */
 p {
-    color: #333; /* Cambia el color del texto a gris oscuro */
+    color: #000; /* Cambia el color del texto a negro */
     text-align: justify;
 }
 
 /* Estilo para los enlaces */
 a {
-    color: #0066cc; /* Color azul para los enlaces */
+    color: #000; /* Color negro para los enlaces */
     text-decoration: none;
 }
 
