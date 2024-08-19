@@ -13,38 +13,29 @@ body {
     padding: 20px;
 }
 
-/* Sección de Sobre Nosotros, Talleres y Contacto con imagen de fondo común */
-.imagen-fondo-comun {
-    background: url('https://picsum.photos/1920/1080') no-repeat center center/cover;
-    color: #000; /* Cambia el color del texto a negro */
-    padding: 50px 20px;
-    border-radius: 10px;
-    background-size: cover;
-}
-
-/* Estilo para las secciones */
+/* Sección de Sobre Nosotros, Talleres y Contacto */
 section {
     padding: 50px 20px;
     margin-bottom: 20px;
     border-radius: 10px;
-    background-color: rgba(255, 255, 255, 0.8); /* Fondo semitransparente blanco */
+    background-color: #fff; /* Fondo blanco sólido */
 }
 
 /* Estilo para los encabezados */
 h1, h2 {
-    color: #000; /* Cambia el color del texto de los encabezados a negro */
+    color: #000; /* Texto en color negro */
     text-align: center;
 }
 
 /* Estilo para el texto */
 p {
-    color: #000; /* Cambia el color del texto a negro */
+    color: #000; /* Texto en color negro */
     text-align: justify;
 }
 
 /* Estilo para los enlaces */
 a {
-    color: #000; /* Color negro para los enlaces */
+    color: #000; /* Enlaces en color negro */
     text-decoration: none;
 }
 
