@@ -27,9 +27,9 @@ body {
     padding: 50px 20px;
 }
 
-/* Sección de Talleres con imagen de fondo */
+/* Sección de Talleres con color de fondo */
 .fondo-talleres {
-    background: url('https://drive.google.com/uc?export=view&id=1oNMETxT_eQ6L5gEv-5760TSQS_0IRn8G') no-repeat center center/cover;
+    background-color: #F5A623; /* Naranja */
     color: #fff;
     padding: 50px 20px;
 }
@@ -42,18 +42,24 @@ body {
 }
 
 .taller-card {
-    background-color: rgba(255, 255, 255, 0.8); /* Fondo blanco semitransparente para las tarjetas */
+    background: url('https://drive.google.com/uc?export=view&id=1oNMETxT_eQ6L5gEv-5760TSQS_0IRn8G') no-repeat center center/cover;
+    background-size: cover; /* Asegura que la imagen cubra toda la tarjeta */
     border-radius: 10px;
     padding: 20px;
     text-align: center;
     width: 200px; /* Ajustar el ancho según sea necesario */
+    height: 150px; /* Ajustar la altura según sea necesario */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra sutil */
     transition: transform 0.3s, box-shadow 0.3s; /* Efecto de transición */
+    color: #fff; /* Color del texto dentro de las tarjetas */
+    font-size: 1.1em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .taller-card h3 {
     margin: 0;
-    color: #333; /* Color del texto para un buen contraste */
 }
 
 /* Efectos de hover para las tarjetas */
