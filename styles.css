@@ -3,7 +3,6 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
 }
 
 /* Estilo para el contenedor principal */
@@ -13,32 +12,51 @@ body {
     padding: 20px;
 }
 
-/* Sección de Inicio con fondo específico */
-#inicio {
-    background: url('https://i.blogs.es/0ca9a6/aa/1366_2000.jpeg') no-repeat center center/cover;
+/* Sección de Inicio y Sobre Nosotros con imagen de fondo común */
+.imagen-fondo-principal {
+    background: url('https://drive.google.com/uc?export=view&id=1oNMETxT_eQ6L5gEv-5760TSQS_0IRn8G') no-repeat center center/cover;
     color: #fff;
     padding: 50px 20px;
     border-radius: 10px;
     text-align: center;
 }
 
-/* Sección de Sobre Nosotros, Talleres y Contacto con imagen de fondo común */
-.imagen-fondo-comun {
-    background: url('https://www.genbeta.com/a-fondo/stable-diffusion-guia-a-fondo-que-como-usarlo-ejemplos-como-generar-imagenes-frase') no-repeat center center/cover;
+/* Sección de Talleres con imagen de fondo específica */
+.imagen-fondo-talleres {
+    background: url('https://drive.google.com/uc?export=view&id=1oNMETxT_eQ6L5gEv-5760TSQS_0IRn8G') no-repeat center center/cover;
     color: #fff;
     padding: 50px 20px;
     border-radius: 10px;
-    box-sizing: border-box;
-    text-align: center;
 }
 
 /* Estilo para las secciones */
 section {
-    padding: 40px 20px;
-    margin-bottom: 30px;
+    padding: 50px 20px;
+    margin-bottom: 20px;
     border-radius: 10px;
-    background-color: rgba(0, 0, 0, 0.6);
+    background-color: rgba(0, 0, 0, 0.6); /* Fondo semitransparente */
+}
+
+/* Estilo para las tarjetas de talleres */
+.talleres-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.taller-card {
+    background-color: rgba(0, 0, 0, 0.8);
+    border-radius: 10px;
+    padding: 20px;
     text-align: center;
+    width: 400px;
+}
+
+.taller-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
 }
 
 /* Estilo para los encabezados */
@@ -51,13 +69,11 @@ h1, h2 {
 p {
     color: #fff;
     text-align: justify;
-    margin: 0 auto;
-    max-width: 800px;
 }
 
 /* Estilo para los enlaces */
 a {
-    color: #FFD700;
+    color: #FFD700; /* Color dorado para los enlaces */
     text-decoration: none;
 }
 
@@ -71,66 +87,7 @@ iframe {
     margin: 0 auto;
     border: none;
     width: 100%;
-    max-width: 100%;
-    height: auto;
-    aspect-ratio: 16 / 9;
+    max-width: 600px;
+    height: 450px;
     border-radius: 10px;
-}
-
-/* Estilo para la sección de talleres */
-.talleres-container {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-    justify-content: center;
-}
-
-.taller-card {
-    background: #fff;
-    color: #333;
-    border-radius: 10px;
-    overflow: hidden;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    width: calc(33% - 20px);
-    margin-bottom: 20px;
-    text-align: center;
-    transition: transform 0.3s, box-shadow 0.3s;
-}
-
-.taller-card:hover {
-    transform: scale(1.05);
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
-}
-
-.taller-card img {
-    width: 100%;
-    height: 200px;
-    object-fit: cover;
-}
-
-.taller-card h3 {
-    margin: 0;
-    padding: 15px;
-    background: #FFD700;
-    color: #fff;
-}
-
-/* Estilo para el botón de "Volver al Inicio" */
-.back-to-top {
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    background-color: #FFD700;
-    color: #fff;
-    border: none;
-    padding: 10px 20px;
-    border-radius: 5px;
-    font-size: 16px;
-    cursor: pointer;
-    display: none; /* Oculto por defecto */
-    transition: opacity 0.3s;
-}
-
-.back-to-top:hover {
-    background-color: #f1c40f;
 }
