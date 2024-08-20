@@ -1,10 +1,9 @@
-/* Código CSS actualizado */
-
 /* Estilo general */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
+    background-color: #f4f4f4;
 }
 
 /* Estilo para el contenedor principal */
@@ -14,20 +13,32 @@ body {
     padding: 20px;
 }
 
-/* Sección de Sobre Nosotros, Talleres y Contacto con imagen de fondo común */
-.imagen-fondo-comun {
-    background: url('https://drive.google.com/uc?export=view&id=1oi_1MGacjhHxWsegPDLMzYsQ7HoFyIdV') no-repeat center center/cover;
+/* Sección de Inicio con fondo específico */
+#inicio {
+    background: url('https://i.blogs.es/0ca9a6/aa/1366_2000.jpeg') no-repeat center center/cover;
     color: #fff;
     padding: 50px 20px;
     border-radius: 10px;
+    text-align: center;
+}
+
+/* Sección de Sobre Nosotros, Talleres y Contacto con imagen de fondo común */
+.imagen-fondo-comun {
+    background: url('https://www.genbeta.com/a-fondo/stable-diffusion-guia-a-fondo-que-como-usarlo-ejemplos-como-generar-imagenes-frase') no-repeat center center/cover;
+    color: #fff;
+    padding: 50px 20px;
+    border-radius: 10px;
+    box-sizing: border-box;
+    text-align: center;
 }
 
 /* Estilo para las secciones */
 section {
-    padding: 50px 20px;
-    margin-bottom: 20px;
+    padding: 40px 20px;
+    margin-bottom: 30px;
     border-radius: 10px;
-    background-color: rgba(0, 0, 0, 0.6); /* Fondo semitransparente */
+    background-color: rgba(0, 0, 0, 0.6);
+    text-align: center;
 }
 
 /* Estilo para los encabezados */
@@ -40,11 +51,13 @@ h1, h2 {
 p {
     color: #fff;
     text-align: justify;
+    margin: 0 auto;
+    max-width: 800px;
 }
 
 /* Estilo para los enlaces */
 a {
-    color: #FFD700; /* Color dorado para los enlaces */
+    color: #FFD700;
     text-decoration: none;
 }
 
@@ -58,7 +71,51 @@ iframe {
     margin: 0 auto;
     border: none;
     width: 100%;
-    max-width: 600px;
-    height: 450px;
+    max-width: 100%;
+    height: auto;
+    aspect-ratio: 16 / 9;
     border-radius: 10px;
+}
+
+/* Estilo para la sección de talleres */
+.talleres-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.taller-card {
+    background: #fff;
+    color: #333;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: calc(33% - 20px);
+    margin-bottom: 20px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.taller-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+.taller-card img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.taller-card h3 {
+    margin: 0;
+    padding: 15px;
+    background: #FFD700;
+    color: #fff;
+    text-align: center;
+}
+
+.taller-card p {
+    padding: 15px;
+    margin: 0;
 }
