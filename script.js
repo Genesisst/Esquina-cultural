@@ -1,37 +1,38 @@
-<!-- Añadir justo antes del cierre de la etiqueta </body> -->
-<script>
+document.addEventListener('DOMContentLoaded', () => {
     // Desplazamiento suave para enlaces de navegación
-    document.addEventListener('DOMContentLoaded', () => {
-        const links = document.querySelectorAll('a[href^="#"]');
-        links.forEach(link => {
-            link.addEventListener('click', function(event) {
-                event.preventDefault();
-                const target = document.querySelector(this.getAttribute('href'));
-                target.scrollIntoView({
+    const links = document.querySelectorAll('a[href^="#"]');
+    links.forEach(link => {
+        link.addEventListener('click', (e) => {
+            e.preventDefault();
+            const targetId = link.getAttribute('href').substring(1);
+            const targetElement = document.getElementById(targetId);
+
+            if (targetElement) {
+                targetElement.scrollIntoView({
                     behavior: 'smooth'
                 });
-            });
+            }
         });
     });
 
-    // Funcionalidad opcional para cambiar el fondo de las secciones
-    const backgrounds = [
-        'https://example.com/nueva-imagen-1.jpg',
-        'https://example.com/nueva-imagen-2.jpg',
-        'https://example.com/nueva-imagen-3.jpg'
-    ];
+    // Botón de "Volver al Inicio"
+    const backToTopButton = document.createElement('button');
+    backToTopButton.textContent = 'Volver al Inicio';
+    backToTopButton.classList.add('back-to-top');
+    document.body.appendChild(backToTopButton);
 
-    function changeBackground(index) {
-        const sections = document.querySelectorAll('.imagen-fondo-comun');
-        sections.forEach(section => {
-            section.style.backgroundImage = `url(${backgrounds[index]})`;
+    backToTopButton.addEventListener('click', () => {
+        document.getElementById('inicio').scrollIntoView({
+            behavior: 'smooth'
         });
-    }
+    });
 
-    // Ejemplo: Cambia el fondo cada 10 segundos
-    let currentIndex = 0;
-    setInterval(() => {
-        currentIndex = (currentIndex + 1) % backgrounds.length;
-        changeBackground(currentIndex);
-    }, 10000); // Cambia cada 10 segundos
-</script>
+    // Mostrar/ocultar botón de "Volver al Inicio" al hacer scroll
+    window.addEventListener('scroll', () => {
+        if (window.scrollY > 300) {
+            backToTopButton.style.display = 'block';
+        } else {
+            backToTopButton.style.display = 'none';
+        }
+    });
+});
