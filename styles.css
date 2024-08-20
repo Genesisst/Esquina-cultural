@@ -12,18 +12,28 @@ body {
     padding: 20px;
 }
 
-/* Sección de Inicio y Sobre Nosotros con imagen de fondo común */
-.imagen-fondo-principal {
-    background: url('https://drive.google.com/uc?export=view&id=1oNMETxT_eQ6L5gEv-5760TSQS_0IRn8G') no-repeat center center/cover;
+/* Colores de fondo para cada sección */
+.fondo-inicio {
+    background-color: #4A90E2; /* Azul claro */
     color: #fff;
     padding: 50px 20px;
-    border-radius: 10px;
     text-align: center;
 }
 
-/* Sección de Talleres con imagen de fondo específica */
-.imagen-fondo-talleres {
-    background: url('https://drive.google.com/uc?export=view&id=1oNMETxT_eQ6L5gEv-5760TSQS_0IRn8G') no-repeat center center/cover;
+.fondo-sobre-nosotros {
+    background-color: #7ED321; /* Verde */
+    color: #fff;
+    padding: 50px 20px;
+}
+
+.fondo-talleres {
+    background-color: #F5A623; /* Naranja */
+    color: #fff;
+    padding: 50px 20px;
+}
+
+.fondo-contacto {
+    background-color: #D0021B; /* Rojo */
     color: #fff;
     padding: 50px 20px;
 }
@@ -33,7 +43,6 @@ section {
     padding: 50px 20px;
     margin-bottom: 20px;
     border-radius: 10px;
-    background-color: rgba(0, 0, 0, 0.6); /* Fondo semitransparente */
 }
 
 /* Estilo para las tarjetas de talleres */
@@ -49,19 +58,17 @@ section {
     border-radius: 10px;
     padding: 20px;
     text-align: center;
-    width: 400px;
+    width: 200px; /* Ajustar el ancho según sea necesario */
 }
 
-.taller-card img {
-    width: 100%;
-    height: auto;
-    border-radius: 10px;
+.taller-card h3 {
+    margin: 0;
+    color: #fff;
 }
 
 /* Estilo para los encabezados */
 h1, h2 {
     color: #fff;
-    text-align: center;
 }
 
 /* Estilo para el texto */
