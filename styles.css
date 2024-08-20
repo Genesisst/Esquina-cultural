@@ -20,11 +20,12 @@ body {
     text-align: center;
 }
 
-/* Sección de Sobre Nosotros con fondo de color sólido */
+/* Sección de Sobre Nosotros con fondo de color sólido y texto negro */
 .fondo-sobre-nosotros {
     background-color: #f2f2f2; /* Color de fondo sólido */
     color: #000; /* Color del texto negro */
     padding: 50px 20px;
+    text-align: center; /* Centra el texto */
 }
 
 /* Sección de Talleres con color de fondo */
