@@ -93,6 +93,7 @@ iframe {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     width: calc(33% - 20px);
     margin-bottom: 20px;
+    text-align: center;
     transition: transform 0.3s, box-shadow 0.3s;
 }
 
@@ -103,8 +104,8 @@ iframe {
 
 .taller-card img {
     width: 100%;
-    height: auto;
-    display: block;
+    height: 200px;
+    object-fit: cover;
 }
 
 .taller-card h3 {
@@ -112,10 +113,24 @@ iframe {
     padding: 15px;
     background: #FFD700;
     color: #fff;
-    text-align: center;
 }
 
-.taller-card p {
-    padding: 15px;
-    margin: 0;
+/* Estilo para el botón de "Volver al Inicio" */
+.back-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #FFD700;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    display: none; /* Oculto por defecto */
+    transition: opacity 0.3s;
+}
+
+.back-to-top:hover {
+    background-color: #f1c40f;
 }
