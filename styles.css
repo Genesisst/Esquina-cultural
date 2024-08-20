@@ -20,16 +20,16 @@ body {
     text-align: center;
 }
 
-/* Sección de Sobre Nosotros con imagen de fondo */
+/* Sección de Sobre Nosotros con fondo de color sólido */
 .fondo-sobre-nosotros {
-    background: url('https://drive.google.com/uc?export=view&id=1oNMETxT_eQ6L5gEv-5760TSQS_0IRn8G') no-repeat center center/cover;
-    color: #fff;
+    background-color: #f2f2f2; /* Color de fondo sólido */
+    color: #000; /* Color del texto negro */
     padding: 50px 20px;
 }
 
 /* Sección de Talleres con color de fondo */
 .fondo-talleres {
-    background-color: #F5A623; /* Naranja */
+    background-color: #F5A623; /* Color de fondo general (naranja) */
     color: #fff;
     padding: 50px 20px;
 }
@@ -42,8 +42,7 @@ body {
 }
 
 .taller-card {
-    background: url('https://drive.google.com/uc?export=view&id=1oNMETxT_eQ6L5gEv-5760TSQS_0IRn8G') no-repeat center center/cover;
-    background-size: cover; /* Asegura que la imagen cubra toda la tarjeta */
+    background: #F8C471; /* Color de fondo de las tarjetas (tono más claro del naranja) */
     border-radius: 10px;
     padding: 20px;
     text-align: center;
@@ -82,7 +81,7 @@ h1, h2 {
 
 /* Estilo para el texto */
 p {
-    color: #fff;
+    color: #000; /* Color del texto en negro */
     text-align: justify;
 }
 
